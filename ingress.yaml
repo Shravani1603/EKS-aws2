@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: game.example.com
+    - host: k8s-app2-tictacto-bf01bf8981-1823663961.ap-south-1.elb.amazonaws.com.nip.io
       http:
         paths:
           - path: /
