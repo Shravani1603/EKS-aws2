@@ -9,6 +9,6 @@ res.sendFile(__dirname + "/public/index.html");
 });
 
 app.listen(port, () => {
-console.log(Tic Tac Toe app running at http://localhost:${port});
+console.log('Tic Tac Toe app running at http://localhost:${port}');
 });
 
