@@ -17,4 +17,4 @@ backend:
 service:
 name: tictactoe-service
 port:
-number: 80
+number: 8001
