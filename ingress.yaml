@@ -6,6 +6,10 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/group.name: app2-group
+    alb.ingress.kubernetes.io/load-balancer-name: app2-alb
+    alb.ingress.kubernetes.io/target-group-attributes: deregistration_delay.timeout_seconds=30
+    alb.ingress.kubernetes.io/target-group-name-prefix: app2tg
 spec:
   ingressClassName: alb
   rules:
