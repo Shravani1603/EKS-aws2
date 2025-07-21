@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: tictactoe
-        image: 919287165203.dkr.ecr.ap-south-1.amazonaws.com/app2:${BUILD_NUMBER}
+        image: 919287165203.dkr.ecr.ap-south-1.amazonaws.com/app2:BUILD_TAG_PLACEHOLDER
         ports:
         - containerPort: 3001
