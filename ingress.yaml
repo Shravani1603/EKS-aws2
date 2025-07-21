@@ -1,20 +1,20 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-name: tictactoe-ingress
-namespace: app2
-annotations:
-alb.ingress.kubernetes.io/scheme: internet-facing
+  name: tictactoe-ingress
+  namespace: app2
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
 spec:
-ingressClassName: alb
-rules:
-- host: game.example.com
-http:
-paths:
-- path: /
-pathType: Prefix
-backend:
-service:
-name: tictactoe-service
-port:
-number: 8001
+  ingressClassName: alb
+  rules:
+    - host: game.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: tictactoe-service
+                port:
+                  number: 8001
