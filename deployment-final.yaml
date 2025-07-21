@@ -1,20 +1,21 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: tictactoe-deployment
-namespace: game
+  name: tictactoe-deployment
+  namespace: game
 spec:
-replicas: 2
-selector:
-matchLabels:
-app: tictactoe
-template:
-metadata:
-labels:
-app: tictactoe
-spec:
-containers:
-- name: tictactoe
-image: 919287165203.dkr.ecr.ap-south-1.amazonaws.com/app2:${BUILD_NUMBER}
-ports:
-- containerPort: 3000
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tictactoe
+  template:
+    metadata:
+      labels:
+        app: tictactoe
+    spec:
+      containers:
+      - name: tictactoe
+        image: 919287165203.dkr.ecr.ap-south-1.amazonaws.com/app2:${BUILD_NUMBER}
+        ports:
+        - containerPort: 3000
