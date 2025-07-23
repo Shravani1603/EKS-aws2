@@ -12,7 +12,6 @@ metadata:
     alb.ingress.kubernetes.io/target-group-name-prefix: app2tg
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
     alb.ingress.kubernetes.io/backend-protocol: HTTP
-    alb.ingress.kubernetes.io/healthcheck-port: "3000"
 spec:
   ingressClassName: alb
   rules:
