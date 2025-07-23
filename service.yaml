@@ -4,6 +4,7 @@ metadata:
   name: tictactoe-service
   namespace: app2
 spec:
+  type: ClusterIP
   selector:
     app: tictactoe
   ports:
