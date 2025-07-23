@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: tictactoe-service
   namespace: app2
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::919287165203:role/eksctl-demo-cluster-addon-iamserviceaccount-k-Role1-ENU5LO9Jj98H
 spec:
   type: ClusterIP
   selector:
