@@ -8,6 +8,6 @@ spec:
     app: tictactoe
   ports:
     - protocol: TCP
-      port: 8001
-      targetPort: 3001
+      port: 80
+      targetPort: 3000
 
