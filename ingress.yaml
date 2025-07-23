@@ -22,4 +22,4 @@ spec:
               service:
                 name: tictactoe-service
                 port:
-                  number: 8001
+                  number: 3001
